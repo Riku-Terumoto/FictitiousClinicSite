@@ -523,7 +523,7 @@ footer small {
         height: 350px;
     }
 
-    #firstview  p:last-child {
+    #firstview  h1:last-child {
         margin-right: 40px;
     }
 }
@@ -732,7 +732,7 @@ footer small {
         letter-spacing: 2px;
     }
 
-    #firstview  p:last-child {
+    #firstview  h1:last-child {
         margin-right: 20px;
     }
 
