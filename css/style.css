@@ -1,6 +1,7 @@
 /* common */
 body {
     font-family: 'Noto Sans JP', sans-serif;
+    color: #444;
 }
 
 .container {
@@ -61,7 +62,6 @@ header #contact-info > .phone a {
     letter-spacing: 5px;
     width: 102px;
     height: 565px;
-    color: #444;
 }
 #firstview  h1:first-child {
     order: 2;
@@ -103,9 +103,8 @@ header #contact-info > .phone a {
     font-size: 1.6rem;
     width: 415px;
     height: 138px;
-    color: #444444;
     margin-top: 37px;
-    line-height: 2;
+    line-height: 2.5;
 }
 
 /* treatment */
@@ -131,6 +130,7 @@ header #contact-info > .phone a {
     font-size: 1.6rem;
     padding-bottom: 34px;
 }
+
 #treatment #treatment-heading p br {
     display: none;
 }
@@ -141,6 +141,7 @@ header #contact-info > .phone a {
     flex-wrap: wrap;
     gap: 20px;
 }
+
 #treatment-contents .treatment-contents__part {
     width: 380px;
     height: 591px;
@@ -150,17 +151,22 @@ header #contact-info > .phone a {
     border: 2px solid #C9C9C9;
     border-radius: 10px;
 }
+
 #treatment-contents .treatment-contents__part h2 {
     font-size: 2.4rem;
     font-weight: bold;
     padding-top: 40px;
 }
+
 #treatment-contents .treatment-contents__part p {
     font-size: 1.6rem;
     display: inline-block;
     text-align: left;
     padding-top: 45px;
+    font-weight: bold;
+    line-height: 2.5;
 }
+
 #treatment-contents .treatment-contents__part img {
     width: 187px;
     height: 187px;
@@ -221,7 +227,7 @@ header #contact-info > .phone a {
 
 #info .info-contens .info-contents__category {
     font-size: 1.2rem;
-    background: #444444 0% 0% no-repeat padding-box;
+    background: #444 0% 0% no-repeat padding-box;
     color: #FFFFFF;
     width: 80px;
     height: 25px;
@@ -239,7 +245,6 @@ header #contact-info > .phone a {
 #info #info-btn {
     text-align: right;
     font-size: 1.6rem;
-    color: #444444;
     padding-top: 39.5px;
     font-weight: bold;
     position: relative;
@@ -293,7 +298,6 @@ footer #contact .phone a {
 
 footer #contact #date-time {
     width: 533px;
-    color: #444444;
     font-size: 1.4rem;
     table-layout: fixed;
     border-top:  2px solid #E7E7E7;
@@ -372,8 +376,6 @@ footer small {
     }
 }
 
-
-
 @media (max-width:1600px) {
     /* firstview */
     #firstview {
@@ -391,6 +393,13 @@ footer small {
         margin: 0 150px;
     }
 }
+
+@media (max-width:1313px) {
+    #treatment-contents .treatment-contents__part p {
+        line-height: 1.5;
+    }
+}
+
 
 @media (max-width:1194px){
     /* firstview */
@@ -541,12 +550,16 @@ footer small {
     }
 
     header #contact-info > p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     header #contact-info > .phone {
         font-size:1.6rem;
         text-align: center;
+    }
+    header #contact-info > .phone img {
+        width: 20px;
+        height: 20px;
     }
 
     /* clinic */
@@ -567,9 +580,14 @@ footer small {
     }
 
     #clinic .clinic-explanation p {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         width: 290px;
         height: 90px;
+        line-height: 2.0;
+    }
+
+    #clinic .clinic-explanation p br {
+        display: none;
     }
 
     #clinic > .container img {
@@ -584,7 +602,7 @@ footer small {
     }
 
     #treatment #treatment-heading p{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     #treatment-contents {
@@ -609,7 +627,9 @@ footer small {
 
     #treatment-contents .treatment-contents__part p {
         padding-left: 0;
-        font-size: 1.1rem;
+        padding-top: 25px;
+        font-size: 1.2rem;
+        line-height: 2;
     }
 
     #treatment-contents .treatment-contents__part img {
@@ -659,7 +679,7 @@ footer small {
 
     footer #contact #date-time {
         width: 400px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     footer #contact .consultation-time {
@@ -721,14 +741,14 @@ footer small {
 
     #firstview  #firstview-comment {
         margin: 0 20px;
-        padding-top: 170px;
+        padding-top: 160px;
     }
 
     #firstview  #firstview-comment h1 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         padding-top: 10px;
         width: 40px;
-        height: 210px;
+        height: 230px;
         letter-spacing: 2px;
     }
 
@@ -744,10 +764,6 @@ footer small {
     #clinic .clinic-explanation p {
         width: 270px;
         height: 90px;
-    }
-
-    #clinic .clinic-explanation p br {
-        display: none;
     }
 
     #clinic > .container img {
@@ -786,24 +802,19 @@ footer small {
     }
 
     #info .info-contens p {
-        font-size: 1.1rem;
-        display: block;
-        flex-grow: 1;
+        font-size: 1.2rem;
     }
 
     #info .info-contens .info-contens__date {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     #info .info-contens .info-contents__category {
-        width: 60px;
-        height: 20px;
-        font-size: 1rem;
-        line-height: 2;
+        width: 70px;
     }
 
     #info #info-btn {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     
     #info #info-btn::before  {
@@ -828,7 +839,7 @@ footer small {
     
     footer #contact #address {
         padding-bottom: 15px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     
     footer #contact .phone {
@@ -884,7 +895,7 @@ footer small {
     footer small {
         width: 100%;
         text-align: center;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         bottom: -45px;
     }
 
