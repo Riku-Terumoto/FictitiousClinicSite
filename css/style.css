@@ -394,11 +394,6 @@ footer small {
     }
 }
 
-@media (max-width:1313px) {
-    #treatment-contents .treatment-contents__part p {
-        line-height: 1.5;
-    }
-}
 
 
 @media (max-width:1194px){
@@ -443,6 +438,7 @@ footer small {
 
     #treatment-contents .treatment-contents__part p {
         padding-left: 20px;
+        line-height: 1.5;
     }
 
     #treatment-contents .treatment-contents__part img {
