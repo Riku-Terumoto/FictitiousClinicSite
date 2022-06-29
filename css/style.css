@@ -92,11 +92,16 @@ header #contact-info > .phone a {
 #clinic .clinic-explanation h1 {
     font-size: 2.4rem;
     font-weight: bold;
-    line-height: 2.4;
+    background: linear-gradient(transparent 65%, #99E5A5 50%);
+    height: 35px;
 }
 
-#clinic .clinic-explanation h1 span {
-    background: linear-gradient(transparent 50%, #99E5A5 50%);
+#clinic .clinic-explanation h1:nth-of-type(1){
+    width: 276px;
+}
+#clinic .clinic-explanation h1:nth-of-type(2){
+    width: 216px;
+    margin-top: 32px;
 }
 
 #clinic .clinic-explanation p {
@@ -110,6 +115,7 @@ header #contact-info > .phone a {
 /* treatment */
 #treatment{
     background: #F5FCF8;
+    padding-top: 78px;
 }
 
 #treatment #treatment-heading {
@@ -119,12 +125,11 @@ header #contact-info > .phone a {
 #treatment #treatment-heading h1 {
     font-size: 2.4rem;
     font-weight: bold;
-    padding: 78px 0 70px;
+    width: 103px;
+    margin: 0 auto 70px;
+    background: linear-gradient(transparent 70%, #99E5A5 50%);
 }
 
-#treatment #treatment-heading h1 span {
-    background: linear-gradient(transparent 50%, #99E5A5 50%);
-}
 
 #treatment #treatment-heading p{
     font-size: 1.6rem;
@@ -188,11 +193,9 @@ header #contact-info > .phone a {
     font-size: 2.4rem;
     font-weight: bold;
     text-align: center;
-    padding-bottom: 70px;
-}
-
-#info h1 span {
-    background: linear-gradient(transparent 50%, #99E5A5 50%);
+    margin: 0 auto 70px;
+    width: 103px;
+    background: linear-gradient(transparent 65%, #99E5A5 50%);
 }
 
 #info #info-container {
@@ -343,10 +346,8 @@ footer #contact .consultation-time tr td:nth-of-type(3) {
 }
 
 footer #contact .consultation-time tr td span {
-    background: linear-gradient(transparent 50%, #99E5A5 50%);
+    background: linear-gradient(transparent 70%, #99E5A5 50%);
 }
-
-
 
 footer #contact .closed-days tr th {
     border-right:  2px solid #E7E7E7;
@@ -368,7 +369,6 @@ footer small {
 
 
 @media (max-width:1800px) {
-
     /* firstview */
     #firstview {
         background-position: 70%;
@@ -395,7 +395,7 @@ footer small {
 }
 
 
-
+ 
 @media (max-width:1194px){
     /* firstview */
     #firstview  #firstview-comment {
@@ -405,10 +405,9 @@ footer small {
     /* clinic */
     #clinic > .container {
         display: flex;
-        padding: 130px 0 82px;
+        padding: 110px 0 82px;
         justify-content: center;
     }
-
 
     #clinic .clinic-explanation {
         padding-left: 0; 
@@ -417,8 +416,12 @@ footer small {
         text-align: center;
     }
 
+    #clinic .clinic-explanation h1 {
+        margin: 0 auto;
+    }
+
     #clinic .clinic-explanation p {
-        margin: 21px auto 30px;
+        margin: 30px auto 30px;
         text-align: left;
     }
 
@@ -531,6 +534,10 @@ footer small {
     #firstview  h1:last-child {
         margin-right: 40px;
     }
+
+    #clinic .clinic-explanation h1 {
+        background: linear-gradient(transparent 65%, #99E5A5 50%);
+    }
 }
 
 
@@ -575,6 +582,17 @@ footer small {
         line-height: 1.6;
     }
 
+    #clinic .clinic-explanation h1:nth-of-type(1){
+        width: 183px;
+        height: 25px;
+    }
+
+    #clinic .clinic-explanation h1:nth-of-type(2){
+        width: 145px;
+        height: 25px;
+        margin-top: 20px;
+    }
+
     #clinic .clinic-explanation p {
         font-size: 1.2rem;
         width: 290px;
@@ -594,7 +612,8 @@ footer small {
     /* treatment */
     #treatment #treatment-heading h1 {
         font-size: 1.6rem;
-        padding: 50px 0 50px;
+        padding: 0;
+        width: 64px;
     }
 
     #treatment #treatment-heading p{
@@ -641,6 +660,12 @@ footer small {
     #info #info-container {
         margin: 0 50px;
         height: 100%;
+    }
+
+    #info h1 {
+        font-size: 1.6rem;
+        width: 65px;
+        margin-bottom: 50px;
     }
 
     #info .info-contens {
@@ -768,8 +793,13 @@ footer small {
     }
 
     /* treatment */
+    #treatment{
+        padding-top: 50px;
+    }
+
     #treatment #treatment-heading h1 {
-        padding: 50px 0 20px;
+        padding: 0;
+        margin-bottom: 30px;
     }
 
     #treatment #treatment-heading p br{
